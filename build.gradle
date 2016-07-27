@@ -78,6 +78,6 @@ project.tasks.all {
 }
 
 buildStamp {
-    repoBaseUrl "https://github.com/jguerinet/j2objc-gradle/"
-    packageName "com.guerinet.j2objcgradle"
+    repoBaseUrl "https://github.com/jguerinet/j2objc-gradle/tree"
+    packageName "com.github.j2objccontrib.j2objcgradle"
 }
