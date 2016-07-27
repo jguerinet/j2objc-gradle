@@ -35,7 +35,7 @@ task wrapper(type: Wrapper) {
     distributionUrl = 'https://services.gradle.org/distributions/gradle-2.4-all.zip'
 }
 
-group = 'com.github.j2objccontrib.j2objcgradle'
+group = 'com.guerinet.j2objc-gradle'
 
 // A suffix of -SNAPSHOT means this is not an official release of the
 // system, but built from an intermediate source tree.  Instructions:
