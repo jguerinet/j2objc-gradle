@@ -113,6 +113,36 @@ class J2objcConfig {
      */
     String destSrcTestDir = null
 
+    /**
+     * Name of the pod. Defaults to "j2objc-" + PROJECT_NAME
+     */
+    String podName = null;
+
+    /**
+     * Pods version. Defaults to 1.0.0
+     */
+    String podVersion = "1.0.0"
+
+    /**
+     * Pod author, Defaults to empty
+     */
+    String podAuthor = ""
+
+    /**
+     * Pod license. Defaults to empty
+     */
+    String podLicense = ""
+
+    /**
+     * Pod homepage URL. Defaults to empty
+     */
+    String podHomepageURL = ""
+
+    /**
+     * Pod source URL. Defaults to empty
+     */
+    String podSourceURL = ""
+
     // Private helper methods
     // Should use instead of accessing client set 'dest' strings
     File getDestLibDirFile() {
