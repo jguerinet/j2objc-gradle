@@ -191,20 +191,20 @@ class PodspecTask extends DefaultTask {
                "  }\n"
 
         // Only add the Watch, iOS, and OSX specs if need be
-        if (minVersionIos != null) {
+        if (!minVersionIos.equals("")) {
             // http://guides.cocoapods.org/syntax/podspec.html#deployment_target
             file += "  spec.ios.xcconfig = {\n" +
                     "    'LIBRARY_SEARCH_PATHS' => '$j2objcHome/lib'\n" +
                     "  }\n" +
                     "  spec.ios.deployment_target = '$minVersionIos'\n"
         }
-        if (minVersionOsx != null) {
+        if (!minVersionOsx.equals("")) {
             file += "  spec.osx.xcconfig = {\n" +
                     "    'LIBRARY_SEARCH_PATHS' => '$j2objcHome/lib/macosx'\n" +
                     "  }\n" +
                     "  spec.osx.deployment_target = '$minVersionOsx'\n"
         }
-        if (minVersionWatchos != null) {
+        if (!minVersionWatchos.equals("")) {
             file += "  spec.watchos.xcconfig = {\n" +
                     "    'LIBRARY_SEARCH_PATHS' => '$j2objcHome/lib'\n" +
                     "  }\n" +
@@ -217,6 +217,9 @@ class PodspecTask extends DefaultTask {
 
     @VisibleForTesting
     void validateNumericVersion(String version, String type) {
+        if (version.equals("")) {
+            return
+        }
         // Requires at least a major and minor version number
         Matcher versionMatcher = (version =~ /^[0-9]*(\.[0-9]+)+$/)
         if (!versionMatcher.find()) {
