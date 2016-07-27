@@ -178,7 +178,7 @@ class PodspecTask extends DefaultTask {
                "  spec.homepage = '$homepageURL'\n" +
                "  spec.license = '$license'\n" +
                "  spec.author = '$author'\n" +
-               "  spec.source = { :git => '$sourceURL', :tag => spec.version.to_spec }\n" +
+               "  spec.source = { :git => '$sourceURL', :tag => spec.version.to_s }\n" +
                "  spec.resources = '$resourceDir/**/*'\n" +
                "  spec.requires_arc = true\n" +
                "  spec.libraries = " +  // continuation of same line
