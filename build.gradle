@@ -51,8 +51,8 @@ test {
 }
 
 pluginBundle {
-    website = 'https://www.github.com/j2objc-contrib/j2objc-gradle/'
-    vcsUrl = 'https://github.com/j2objc-contrib/j2objc-gradle'
+    website = 'https://github.com/jguerinet/j2objc-gradle/'
+    vcsUrl = 'https://github.com/jguerinet/j2objc-gradle/'
     description =
             "Gradle Plugin for J2ObjC, which is an open-source tool from Google that translates " +
             "Java source code to Objective-C for the iOS (iPhone/iPad) platform. The plugin is " +
@@ -65,7 +65,7 @@ pluginBundle {
 
     plugins {
         j2objcPlugin {
-            id = 'com.github.j2objccontrib.j2objcgradle'
+            id = 'com.jguerinet.j2objc-gradle'
             displayName = 'J2ObjC Gradle Plugin'
         }
     }
@@ -78,6 +78,6 @@ project.tasks.all {
 }
 
 buildStamp {
-    repoBaseUrl "https://github.com/j2objc-contrib/j2objc-gradle/tree/"
-    packageName "com.github.j2objccontrib.j2objcgradle"
+    repoBaseUrl "https://github.com/jguerinet/j2objc-gradle/"
+    packageName "com.guerinet.j2objc-gradle"
 }
