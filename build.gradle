@@ -65,7 +65,7 @@ pluginBundle {
 
     plugins {
         j2objcPlugin {
-            id = 'com.jguerinet.j2objcgradle'
+            id = 'com.guerinet.j2objcgradle'
             displayName = 'J2ObjC Gradle Plugin'
         }
     }
