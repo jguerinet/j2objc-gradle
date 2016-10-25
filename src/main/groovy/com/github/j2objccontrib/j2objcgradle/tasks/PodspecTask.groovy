@@ -151,17 +151,17 @@ class PodspecTask extends DefaultTask {
                "    }\n" +
                // http://guides.cocoapods.org/syntax/podspec.html#deployment_target
                "    spec.ios.xcconfig = {\n" +
-               "        'LIBRARY_SEARCH_PATHS' => '$j2objcHome/lib'\n" +
+               "        'LIBRARY_SEARCH_PATHS' => '$podsDirectory/j2objc/lib'\n" +
                "    }\n" +
                "    s.ios.deployment_target = '$minVersionIos'\n" +
                "    s.ios.vendored_libraries = '$libDirIos/lib${libName}.a'\n" +
-               "    s.prepare_command = <<-CMD" +
-               "        ./download_distribution" +
-               "    CMD" +
+               "    s.prepare_command = <<-CMD\n" +
+               "        ./download_distribution\n" +
+               "    CMD\n" +
                 // Path to the headers for our library and J2ObjC
-               "    s.preserve_paths = 'dist', 'src'" +
+               "    s.preserve_paths = 'dist', 'src'\n" +
                 // Headers for J2ObjC
-               "    s.header_mappings_dir = 'dist/include'" +
+               "    s.header_mappings_dir = 'dist/include'\n" +
                "end\n"
     }
 
