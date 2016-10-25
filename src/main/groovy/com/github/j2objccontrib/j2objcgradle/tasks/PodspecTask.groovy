@@ -124,7 +124,7 @@ class PodspecTask extends DefaultTask {
 
         // Absolute paths for Xcode command line
         validatePodspecPath(j2objcHome, false)
-        validatePodspecPath(publicHeadersDir, false)
+        validatePodspecPath(publicHeadersDir, true)
 
         // TODO: CocoaPods strongly recommends switching from 'resources' to 'resource_bundles'
         // http://guides.cocoapods.org/syntax/podspec.html#resource_bundles
