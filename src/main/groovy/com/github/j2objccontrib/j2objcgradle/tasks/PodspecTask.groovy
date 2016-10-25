@@ -84,10 +84,6 @@ class PodspecTask extends DefaultTask {
 
     @TaskAction
     void podspecWrite() {
-
-        // Absolute path for header include, relative path for resource include
-        String headerIncludePath = getDestSrcMainObjDirFile().getAbsolutePath()
-
         // TODO: allow custom list of libraries
         // podspec paths must be relative to podspec file, which is in buildDir
         String resourceIncludePath = Utils.relativizeNonParent(getDestPodspecDirFile(), getDestSrcMainResourcesDirFile())
@@ -108,6 +104,12 @@ class PodspecTask extends DefaultTask {
                 getMinVersionIos(), getLibName(), getJ2objcHome(), author, license, homepageURL, sourceURL, version)
 
         Utils.projectMkDir(project, getDestPodspecDirFile())
+
+        // Delete the podspec if it exists already
+        if (getPodspec().exists()) {
+            getPodspec().delete()
+        }
+
         logger.debug("Writing podspec... ${getPodspec()}")
         getPodspec().write(podspecContents)
     }
