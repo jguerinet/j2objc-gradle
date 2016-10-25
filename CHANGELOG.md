@@ -1,3 +1,53 @@
+# Personal Changes
+
+## Version 0.8.5 (2016-10-25) 
+* Added code to delete the podspec if it exists during regeneration
+
+## Version 0.8.4 (2016-10-24)
+* Fixed small bug in the podspec
+
+## Version 0.8.3 (2016-10-24)
+* Fixed J2ObjC folder name 
+* Fixed script file name
+
+## Version 0.8.2 (2016-10-24)
+* Fixed bug in the last lines of the podspec
+* Fixed relative path in the XCConfig path
+
+## Version 0.8.1 (2016-10-24)
+* Fixed bugs due to 0.8.0 changes
+
+## Version 0.8.0 (2016-10-24)
+* Removed traces of OSX and WatchOS 
+* Reworked the podspec to have the command to download J2ObjC
+
+## Version 0.7.8 (2016-07-27)
+* Fixed bug in podspec source line
+
+## Version 0.7.7 (2016-07-27)
+* Switched the optional platforms to empty Strings instead of null ones
+
+## Version 0.7.6 (2016-07-27)
+* Removing the WatchOS, OSX, and iOS specs if not needed
+
+## Version 0.7.5 (2016-07-27)
+* Fixed bug in the podspec source line
+
+## Version 0.7.4 (2016-07-27)
+* Added the dynamic setting of the pod version
+
+## Version 0.7.3 (2016-07-27)
+* Added more customizable fields to the podspec
+
+## Version 0.7.2 (2016-07-27)
+* Fixed package name
+
+## Version 0.7.1 (2016-07-27)
+* Made the source compatible with Java 7
+
+## Version 0.7.0 (2016-07-27)
+* First custom release: added more customizable info to the podspec
+
 The following link can be adapted to see the differences between two versions.
 Example is given for differences between `v0.5.0-alpha` and `v0.6.0-alpha`:
 
