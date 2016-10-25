@@ -270,10 +270,8 @@ class XcodeTask extends DefaultTask {
         assert (task != null)
         PodspecTask j2objcPodspec = (PodspecTask) task
 
-        logger.debug("${proj.getName()} project podspecs: " +
-                     "${j2objcPodspec.getPodNameDebug()}, ${j2objcPodspec.getPodNameRelease()}")
-        podspecs.add(new PodspecDetails(proj.getName(),
-                j2objcPodspec.getPodspecDebug(), j2objcPodspec.getPodspecRelease(),
+        logger.debug("${proj.getName()} project podspec: ${j2objcPodspec.getBasePodName()}")
+        podspecs.add(new PodspecDetails(proj.getName(), j2objcPodspec.getPodspec(), j2objcPodspec.getPodspec(),
                 getXcodeDebugConfigurations2(), getXcodeReleaseConfigurations2()))
 
         J2objcConfig j2objcConfig = proj.getExtensions().getByType(J2objcConfig)
