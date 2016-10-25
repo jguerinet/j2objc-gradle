@@ -150,7 +150,7 @@ class PodspecTask extends DefaultTask {
                "        'HEADER_SEARCH_PATHS' => '$podsDirectory/j2objc/include $podsDirectory/$publicHeadersDir'\n" +
                "    }\n" +
                // http://guides.cocoapods.org/syntax/podspec.html#deployment_target
-               "    spec.ios.xcconfig = {\n" +
+               "    s.ios.xcconfig = {\n" +
                "        'LIBRARY_SEARCH_PATHS' => '$podsDirectory/j2objc/lib'\n" +
                "    }\n" +
                "    s.ios.deployment_target = '$minVersionIos'\n" +
