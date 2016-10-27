@@ -99,6 +99,20 @@ class J2objcConfig {
     String destLibDir = null
 
     /**
+     * Java sources directories
+     * <p />
+     * Defaults to the java plugin main source sets
+     */
+    Set<String> srcMainDirs = new HashSet<>()
+
+    /**
+     * Java test sources directories
+     * <p />
+     * Defaults to the java plugin test source sets
+     */
+    Set<String> srcTestDirs = new HashSet<>()
+
+    /**
      * Where to assemble generated main source and resources files.
      * <p/>
      * Defaults to $buildDir/j2objcOutputs/src/main/objc
