@@ -29,7 +29,7 @@ dependencies {
     compile gradleApi()
 }
 
-sourceCompatibility = 1.7
+sourceCompatibility = 1.8
 task wrapper(type: Wrapper) {
     gradleVersion = '2.4'
     distributionUrl = 'https://services.gradle.org/distributions/gradle-2.4-all.zip'
@@ -40,7 +40,7 @@ group = 'com.guerinet.j2objcgradle'
 // A suffix of -SNAPSHOT means this is not an official release of the
 // system, but built from an intermediate source tree.  Instructions:
 // https://github.com/j2objc-contrib/j2objc-gradle/blob/master/CONTRIBUTING.md#publishing-and-versioning
-version = '0.8.6'
+version = '0.8.7'
 
 test {
     testLogging {
