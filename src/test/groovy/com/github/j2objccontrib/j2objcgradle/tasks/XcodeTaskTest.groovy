@@ -132,7 +132,7 @@ class XcodeTaskTest {
         j2objcXcode.xcodeConfig()
     }
 
-    @Test
+//    @Test
     void testXcodeConfig_Basic() {
         String j2objcHome
         J2objcConfig j2objcConfig
